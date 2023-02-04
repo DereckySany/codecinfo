@@ -25,11 +25,29 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew assembledebug
 
-    - name: Upload debug APK
+    - name: Upload nonFreeMobile debug APK
       uses: actions/upload-artifact@v3
       with:
-        name: apk-debug
-        path: app/build/outputs/apk/mobileDebug
+        name: apk-nonFreeMobile-debug
+        path: app/build/outputs/apk/nonFreeMobile/debug
+
+    - name: Upload nonFreeTv debug APK
+      uses: actions/upload-artifact@v3
+      with:
+        name: apk-nonFreeTv-debug
+        path: app/build/outputs/apk/nonFreeTv/debug
+
+    - name: Upload standardMobile debug APK
+      uses: actions/upload-artifact@v3
+      with:
+        name: apk-standardMobile-debug
+        path: app/build/outputs/apk/standardMobile/debug
+
+    - name: Upload standardTv debug APK
+      uses: actions/upload-artifact@v3
+      with:
+        name: apk-standardTv-debug
+        path: app/build/outputs/apk/standardTv/debug
 
   standardMobileDebug:
     runs-on: ubuntu-latest
