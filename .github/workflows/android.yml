@@ -47,11 +47,11 @@ jobs:
       run: chmod +x gradlew
 
     - name: Build debug APK
-        uses: gradle/gradle-build-action@v2
-        with:
-          arguments: assemblestandardMobileDebug
-        env:
-          CRASH_REPORT_WEBHOOK_URL: ${{ secrets.CRASH_REPORT_WEBHOOK_URL }}
+      uses: gradle/gradle-build-action@v2
+      with:
+        arguments: assemblestandardMobileDebug
+      env:
+        CRASH_REPORT_WEBHOOK_URL: ${{ secrets.CRASH_REPORT_WEBHOOK_URL }}
 
     - name: Upload debug APK
       uses: actions/upload-artifact@v3
