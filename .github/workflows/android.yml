@@ -29,7 +29,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: apk-debug
-        path: app/build/outputs/apk/debug
+        path: app/build/outputs/apk/mobileDebug
 
   standardMobileDebug:
     runs-on: ubuntu-latest
@@ -56,5 +56,5 @@ jobs:
     - name: Upload debug APK
       uses: actions/upload-artifact@v3
       with:
-        name: apk-standard-Mobile-Debug
-        path: app/build/outputs/apk/standard/mobile/debug
+        name: apk-standardMobile-Debug
+        path: app/build/outputs/apk/standardMobile/debug
