@@ -1,4 +1,6 @@
 # Codec Info
+[![Android CI](https://github.com/DereckySany/codecinfo/actions/workflows/android.yml/badge.svg)](https://github.com/DereckySany/codecinfo/actions/workflows/android.yml)
+
 Detailed listing of multimedia codecs on your Android device - with no ads!
 
 Codec Info is a simple tool that provides detailed listing of multimedia encoders and decoders (codecs) that are available on your Android device.
